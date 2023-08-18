@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 14 HTML</title>
+    <style>
+        * {
+            margin: 5px;
+            margin-left: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo 14 HTML - Atributos do input</h1>
+    <form action="pagina,jsp" method="post">
+        <div>
+            <label for="">RG:</label>
+            <input type="text" name="txtRG" id="txtRG" required autofocus>
+        </div>
+        <div>
+            <label for="">Nome:</label>
+            <input type="text" name="txtNome" id="txtNome" required autofocus>
+        </div>
+        <div>
+            <label for="">Digite um ano de nascimento:</label>
+            <input type="number" name="txtAnoNascimento" id="txtAnoNascimento" required min="1950" max="2030" step="10">
+        </div>
+        <div>
+            <label for="">Selecione a data de sua estadia:</label>
+            <input type="date" name="txtDataEstadia" id="txtDataEstadia" min="2023-04-20" max="2023-06-20">
+        </div>
+        <div>
+            <label for="">Escreva um comentário sobre sua estadia</label>
+            <br>
+            <textarea name="txtComentario" id="txtComentario" cols="30" rows="20" maxlength="400"></textarea>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>
